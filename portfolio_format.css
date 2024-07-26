@@ -97,8 +97,44 @@ video {
 	margin-right: 0px;
 }
 
-/* Below 850 pixels*/
 @media screen and (max-width:900px)
+{
+	.single-grid-sketch {
+		display: grid;
+		grid-template-areas: 
+			'sketch'
+			'pros';
+		grid-template-columns: 100%;
+		text-align: left;
+		width: 100%;	
+	}
+	.pros{
+		margin: 25px;
+	}
+	
+	.sketch img {
+		width: 100%;
+		border-radius: 25px;
+	}
+	
+	.sketch {
+		padding: 0px;
+		margin: 10px;
+		margin-right: 20px;
+	}
+	
+	#third-sketch video {
+		padding: 0px;
+		margin-right: auto;
+		margin-left: auto;
+		width: 92%;
+	}
+	
+}
+
+
+/* Below 850 pixels*/
+@media screen and (max-width:376pt)
 {
 	.single-grid-sketch {
 		display: grid;
