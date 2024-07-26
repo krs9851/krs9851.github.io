@@ -134,7 +134,7 @@ video {
 
 
 /* Below 850 pixels*/
-@media screen and (max-width:376pt)
+@media screen and (max-width:440pt)
 {
 	.single-grid-sketch {
 		display: grid;
