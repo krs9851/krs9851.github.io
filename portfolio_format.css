@@ -78,8 +78,16 @@ h3 {
 	width: 100%;	
 }
 
-.sketch {
-	grid-area: sketch;
+.sketch img {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 25px;
+}
+
+.single-grid-sketch .sketch {
+	padding-left: 15px;
+	margin-top: 0px;
 }
 
 video {
@@ -89,17 +97,53 @@ video {
 	margin-right: 0px;
 }
 
+/* Below 850 pixels*/
+@media screen and (max-width:900px)
+{
+	.single-grid-sketch {
+		display: grid;
+		grid-template-areas: 
+			'sketch'
+			'pros';
+		grid-template-columns: 100%;
+		text-align: left;
+		width: 100%;	
+	}
+	.pros{
+		margin: 25px;
+	}
+	
+	.sketch img {
+		width: 100%;
+		border-radius: 25px;
+	}
+	
+	.sketch {
+		padding: 0px;
+		margin: 10px;
+		margin-right: 20px;
+	}
+	
+	#third-sketch video {
+		padding: 0px;
+		margin-right: auto;
+		margin-left: auto;
+		width: 92%;
+	}
+	
+}
+
+
+.sketch {
+	grid-area: sketch;
+}
+
 figure {
 	margin-bottom: 0px;
 	margin-right: 0px;
 }
 
-.sketch img {
-	width: 90%;
-	margin-left: auto;
-	margin-right: auto;
-	border-radius: 25px;
-}
+
 
 .pros {
 	grid-area: pros;
@@ -111,11 +155,6 @@ figure {
 	margin-top: 0px;
 }
 
-
-.single-grid-sketch .sketch {
-	padding-left: 15px;
-	margin-top: 0px;
-}
 
 #labels-sketch .sketch {
 	margin-top: auto;
