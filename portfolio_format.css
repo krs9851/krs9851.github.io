@@ -63,7 +63,6 @@ h3 {
 #third-sketch {
 	grid-area: third-sketch;
 	background-color: rgba(147, 112, 219, 100%);
-	border: 7px solid #483D8B;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	border-radius: 25px;
@@ -268,3 +267,40 @@ footer {
 	margin-right: 10%;
 	width: 80%;
 }
+
+/* List Grids */
+#competency-one {
+	grid-area: competency-one;
+}
+
+#competency-two {
+	grid-area: competency-two;
+}
+#coding-one {
+	grid-area: coding-one;
+}
+
+#coding-two {
+	grid-area: coding-two;
+}
+
+#grid-competency {
+	display: grid;
+	grid-template-areas: 
+		'competency-one competency-two';
+	grid-template-columns: 45% 45%;
+	row-gap: 10%;
+}
+
+#grid-coding {
+	display: grid;
+	grid-template-areas: 
+		'coding-one coding-two';
+	grid-template-columns: 45% 45%;
+	row-gap: 10%;
+}
+
+iframe {
+	margin-left: 25px;
+}
+
