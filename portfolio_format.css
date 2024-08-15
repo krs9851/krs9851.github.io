@@ -307,3 +307,11 @@ iframe {
 .pros p {
 	padding-right: 50px;
 }
+
+.reference {
+	margin-bottom: 3em;
+}
+
+.reference h2 {
+	margin-bottom: .5em;
+}
